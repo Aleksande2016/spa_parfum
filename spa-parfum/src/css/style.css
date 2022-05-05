@@ -1,0 +1,90 @@
+* {
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      height: 200px;
+      background: url(../images/fon_header3.jpg) 50%/cover no-repeat;
+}
+
+.header {
+      width: 80%;
+      max-width: 1520px;
+      height: 740px;
+      margin: auto;
+}
+
+.header_nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 560px;
+}
+
+.header_nav_description {
+      width: 68%;
+}
+
+header button,
+.header_nav_logo {
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+}
+
+.header_nav_logo,
+.cart {
+      background-color: #589DC4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 16%;
+      height: 70px;
+}
+
+.cart img {
+      width: 30%;
+}
+
+.description_btn {
+      height: 35px;
+      text-decoration: none;
+}
+
+.color1 {
+      background-color: #9D62DD;
+      border: #9D62DD;
+      width: 33.3%;
+}
+
+.color2 {
+      background-color: #F78B48;
+      border: #F78B48;
+      width: 66.6%;
+}
+
+.color3 {
+      background-color: #9CCC3D;
+      border: #9CCC3D;
+      width: 33.3%;
+}
+
+.color4 {
+      background-color: #DF59CA;
+      border: #DF59CA;
+      width: 33.3%;
+}
+
+.color5 {
+      background-color: #FFB54E;
+      border: #FFB54E;
+      width: 33.3%;
+}
+
+main,
+footer {
+      height: 40px;
+      margin: auto;
+}
