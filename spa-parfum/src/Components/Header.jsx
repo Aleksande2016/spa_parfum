@@ -5,40 +5,30 @@ import '../css/style.css';
 import cart from '../images/cart.png';
 
 const Header = () => (
-  <div className="container">
-    <header className="header">
+  <header className="header">
+    <div className="container">
       <div className="header_nav">
         <Link to="/" className="header_nav_logo">
           Логотип
         </Link>
         <div className="header_nav_description">
-          <div>
-            <Link to="/showcase" className="description_btn color1">
-              <button type="button" className="description_btn color1">
-                Витрина
-              </button>
+          <div className="header_nav_link">
+            <Link to="/showcase" className="description_link color1">
+              Витрина
             </Link>
-            <Link to="/client" className="description_btn color2">
-              <button type="button" className="description_btn color2">
-                Как стать клиентом
-              </button>
+            <Link to="/client" className="description_link color2">
+              Как стать клиентом
             </Link>
           </div>
-          <div>
-            <Link to="/women" className="description_btn color3">
-              <button type="button" className="description_btn color3">
-                Для женщин
-              </button>
+          <div className="header_nav_link">
+            <Link to="/women" className="description_link color3">
+              Для женщин
             </Link>
-            <Link to="/men" className="description_btn color4">
-              <button type="button" className="description_btn color4">
-                Для мужчин
-              </button>
+            <Link to="/men" className="description_link color4">
+              Для мужчин
             </Link>
-            <Link to="/child" className="description_btn color5">
-              <button type="button" className="description_btn color5">
-                Для детей
-              </button>
+            <Link to="/child" className="description_link color5">
+              Для детей
             </Link>
           </div>
         </div>
@@ -46,8 +36,8 @@ const Header = () => (
           <img src={cart} alt="Cart" /> {/* <Link to='/cart'><img src={cart} alt="Cart" /></Link> */}
         </Link>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 );
 
 export default Header;

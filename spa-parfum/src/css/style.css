@@ -3,26 +3,39 @@
       padding: 0;
 }
 
-.container {
-      height: 200px;
-      background: url(../images/fon_header3.jpg) 50%/cover no-repeat;
+.header {
+      background-color: #9A9FA4;
+      height: 130px;
 }
 
-.header {
+.container {
       width: 80%;
       max-width: 1520px;
-      height: 740px;
       margin: auto;
 }
 
 .header_nav {
       display: flex;
       justify-content: space-between;
-      padding: 20px 0 560px;
+      padding: 30px 0 30px;
 }
 
 .header_nav_description {
       width: 68%;
+}
+
+.header_nav_description a {
+     color: azure;
+     text-transform: uppercase;
+      font-weight: bold;
+}
+
+.header_nav_description a:hover {
+      color: red;
+ }
+
+.header_nav_link {
+      display: flex;
 }
 
 header button,
@@ -45,10 +58,14 @@ header button,
 }
 
 .cart img {
-      width: 30%;
+      height: 70%;
 }
 
-.description_btn {
+.description_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       height: 35px;
       text-decoration: none;
 }
@@ -83,8 +100,13 @@ header button,
       width: 33.3%;
 }
 
-main,
+.main {
+      height: 550px;
+      background: url(../images/fon_header3.jpg) 50%/cover no-repeat;
+}
+
 footer {
-      height: 40px;
+      background: #9862D3;
+      height: 200px;
       margin: auto;
 }
