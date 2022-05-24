@@ -10,14 +10,15 @@ const Men = () => {
     fetch('http://localhost:8000/goods')
       .then((db) => db.json())
       .then((json) => setData(json));
-  }, [data]);
+  }, []);
+  console.log(data);
 
   return (
     <div className="goods">
       {data.length > 0 ? (
         <ul ref={ul} className="goods__items">
-          {data.map((goods, index) => (
-            <GoodsItem goods={goods} />
+          {data.map((goods, id) => (
+            <GoodsItem key={id} goods={goods} />
           ))}
         </ul>
       ) : (

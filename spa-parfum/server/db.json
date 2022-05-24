@@ -1,0 +1,18 @@
+{
+  "goods": [
+      {
+            "id": 0,
+            "title": "Туалетная вода Avon Luck для него 75 мл",
+            "price": "60,00 руб",
+            "image": "<img src='Туалетная вода Avon Luck.jpg' alt='Туалетная вода Avon Luck'>",
+           "category": "men"
+      },
+      {
+            "id": 1,
+            "title": "Title-2",
+            "price": "70,00 руб",
+            "image": "<img src='Туалетная вода Avon Luck.jpg' alt='Туалетная вода Avon Luck'>",
+            "category": "men"
+      }
+  ]
+}

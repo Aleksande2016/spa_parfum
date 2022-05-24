@@ -1,18 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const GoodsItem = ({ goods }) => {
   const { id, title, price, image, category } = goods;
-  const history = useNavigate();
-
-  const handleClick = () => {
-    history(`/goods/${id}`, {
-      state: {
-        price,
-        category,
-      },
-    });
-  };
+  console.log(goods);
 
   return (
     <li className="goods__item">
@@ -20,18 +10,10 @@ const GoodsItem = ({ goods }) => {
         <img src={image} alt={title} />
       </div>
       <div className="goods__caption">
-        <div
-          className="goods__caption__name"
-          onClick={() => {
-            handleClick();
-          }}
-        >
-          {title}
-        </div>
         <div className="goods__caption__subname">{category}</div>
         <div className="goods__caption__price">${price} $</div>
-        <button id={id} className="goods__caption__btn">
-          +
+        <button type="button" id={id} className="goods__caption__btn">
+          Добавить в корзину
         </button>
       </div>
     </li>
