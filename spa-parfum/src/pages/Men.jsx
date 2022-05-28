@@ -7,18 +7,17 @@ const Men = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/goods')
+    fetch('http://localhost:3001/goods')
       .then((db) => db.json())
       .then((json) => setData(json));
   }, []);
-  console.log(data);
 
   return (
     <div className="goods">
       {data.length > 0 ? (
         <ul ref={ul} className="goods__items">
           {data.map((goods, id) => (
-            <GoodsItem key={id} goods={goods} />
+            <GoodsItem key={goods.id} goods={goods} />
           ))}
         </ul>
       ) : (
